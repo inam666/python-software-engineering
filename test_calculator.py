@@ -1,5 +1,5 @@
 import pytest
-from calculator import add, divide, subtract, multiply
+from calculator import add, divide, subtract, multiply, square
 
 
 # --------------------
@@ -90,3 +90,7 @@ def test_divide_decimal():
 def test_divide_by_one():
     result = divide(10, 1)
     assert result == 10
+
+def test_square():
+    result = square(5)
+    assert result == 25
