@@ -1,5 +1,5 @@
 import pytest
-from calculator import add, divide, subtract, multiply, square
+from calculator import add, divide, subtract, multiply, square, absolute
 
 
 # --------------------
@@ -91,6 +91,19 @@ def test_divide_by_one():
     result = divide(10, 1)
     assert result == 10
 
+#---------------------
+# Square
+#---------------------
+
 def test_square():
     result = square(5)
     assert result == 25
+
+#--------------------------------
+# Absolute
+#---------------------------------
+
+def test_absolute():
+    result = absolute(-5)
+    assert result == 5
+

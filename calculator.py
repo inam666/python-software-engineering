@@ -17,3 +17,7 @@ def divide(a, b):
 
 def square(a):
     return a * a
+
+
+def absolute(a):
+    return abs(a)
