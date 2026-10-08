@@ -1,5 +1,5 @@
 import pytest
-from calculator import add, divide, subtract, multiply, square, absolute
+from calculator import add, divide, subtract, multiply, square, absolute, cube
 
 
 # --------------------
@@ -106,4 +106,8 @@ def test_square():
 def test_absolute():
     result = absolute(-5)
     assert result == 5
+
+def test_cube():
+    result = cube(3)
+    assert result == 27
 

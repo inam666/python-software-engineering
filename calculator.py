@@ -21,3 +21,7 @@ def square(a):
 
 def absolute(a):
     return abs(a)
+
+def cube(a):
+    return a * a * a
+
