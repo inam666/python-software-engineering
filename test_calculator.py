@@ -107,6 +107,16 @@ def test_absolute():
     result = absolute(-5)
     assert result == 5
 
+def test_absolute_positive():
+    result = absolute(5)
+    assert result == 5
+
+
+def test_absolute_zero():
+    result = absolute(0)
+    assert result == 0
+
+
 def test_cube():
     result = cube(3)
     assert result == 27
